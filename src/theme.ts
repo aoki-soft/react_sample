@@ -25,10 +25,11 @@ export const lightThemeOptions: ThemeOptions = {
       dark: '#a42d2f',
     },
     text: {
-      primary: '#313434',
+      primary: '#060607',
+      secondary: '#4f5660',
     },
     background: {
-      default: '#EFF0F0',
+      default: '#f2f3f5',
     }
   },
   typography: {
@@ -36,7 +37,7 @@ export const lightThemeOptions: ThemeOptions = {
   },
 };
 export const lightTheme: UiTheme = {
-  drawer: '#AFB6B6',
+  drawer: '#e3e5e8',
 } as const;
 
 export const darkThemeOptions: ThemeOptions = {
@@ -59,7 +60,8 @@ export const darkThemeOptions: ThemeOptions = {
       dark: '#a42d2f',
     },
     text: {
-      primary: '#fefefe'
+      primary: '#fefefe',
+      secondary: '#b9bbbe'
     },
     background: {
       default: '#36393f',

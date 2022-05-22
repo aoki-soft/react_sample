@@ -19,9 +19,12 @@ function Home(){
   return (<>
   <Box sx={{ display: 'flex', height: '100vh', fontFamily: 'Noto Sans JP'}}>
     <Box component='nav' bgcolor={`${theme.drawer}`}>
-      <List>
-        <ListItem>
-          <ListItemText primary={'メニュー画面'} />
+      <List sx={{mt: 1}}>
+        <ListItem button>
+          <ListItemText primary={'証明書生成'} />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary={'このアプリについて'} />
         </ListItem>
       </List>
     </Box>
