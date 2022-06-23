@@ -1,7 +1,8 @@
-import { Button, Container, Typography, ListItem, ListItemText, List, Box, Switch} from '@mui/material';
+import { Button, Container, Typography, ListItem, ListItemText, List, Box, Switch, ListItemIcon} from '@mui/material';
 import { useRecoilState } from 'recoil';
 import { paletteModeState, themeState } from './state';
 import { lightTheme, darkTheme} from './theme'
+import SettingsIcon from '@mui/icons-material/Settings';
 
 function Home(){
   const [theme, setTheme ] = useRecoilState(themeState);
@@ -21,10 +22,11 @@ function Home(){
     <Box component='nav' bgcolor={`${theme.drawer}`}>
       <List sx={{mt: 1}}>
         <ListItem button>
-          <ListItemText primary={'証明書生成'} />
+          <ListItemText primary={'メイン'} />
         </ListItem>
         <ListItem button>
-          <ListItemText primary={'このアプリについて'} />
+            <SettingsIcon/>
+          <ListItemText primary={'設定'} />
         </ListItem>
       </List>
     </Box>
